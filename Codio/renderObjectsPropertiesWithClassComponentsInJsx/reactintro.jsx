@@ -13,7 +13,12 @@ class ReactIntro extends React.Component {
 
   initializeState = () => {
     // TODO: set the state object to have values according to the instructions
-
+    this.setState({
+        initialized: true,
+        productName: 'Rice Krispies',
+        productDescription: 'a cereal made of popped rice',
+        productPrice: '$3.00'
+    });
     // do not edit this code
     return this.state;
   };
@@ -21,10 +26,10 @@ class ReactIntro extends React.Component {
   render() {
     // you may use this log if needed to ensure you have the correct values in your state
     console.log(this.state);
-    const { initialized } = this.state;
+    const { initialized, productName, productDescription, productPrice } = this.state;
 
     // use string interpolation to construct this
-    const stringToReturn = ``;
+    const stringToReturn = `The product name is ${productName}, product description is ${productDescription}, and product price is ${productPrice}.`;
 
     if (this.state.initialized) {
       return stringToReturn;
