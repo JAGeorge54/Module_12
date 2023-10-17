@@ -8,7 +8,12 @@ class TodoApp extends React.Component {
     };
   
     // TODO: Add handleDelete to remove the index from the state
-  
+    handleDelete = (index) => {
+        const newArr = [...this.state.tasks];
+        newArr.splice(index, 1);
+        this.setState({ tasks: newArr });
+      };
+      
     render() {
       return (
         <div className="wrapper">
