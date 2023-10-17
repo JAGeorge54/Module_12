@@ -21,10 +21,10 @@ const App = () => {
     };
     // you may use this log if needed to ensure you have the correct values in your state
     console.log('State: ', state);
-    const { initialized } = state;
+    const { initialized, productName, productDescription, productPrice } = state;
   
     // use string interpolation to construct this
-    const stringToReturn = ``;
+    const stringToReturn = `The product name is ${productName}, product description is ${productDescription}, and product price is ${productPrice}.`;
   
     if (initialized) {
       return stringToReturn;
