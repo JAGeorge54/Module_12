@@ -11,7 +11,12 @@ const App = () => {
     const initializeState = () => {
       console.log('initializing state...');
       // TODO: Here you will set the state object to have values according to the instructions
-  
+      setState({
+        initialized: true,
+        productName: 'Rice Krispies',
+        productDescription: 'a cereal made of popped rice',
+        productPrice: '$3.00'
+        });
       return state;
     };
     // you may use this log if needed to ensure you have the correct values in your state
